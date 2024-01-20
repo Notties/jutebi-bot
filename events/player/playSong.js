@@ -17,7 +17,7 @@ module.exports = async (client, queue, song) => {
         )
         .setImage(queue.songs[0].thumbnail)
         .setColor("#FF0000")
-        .setFooter({ text: "More info - Use /help command [RTX GAMING]" });
+        .setFooter({ text: "More info - Use /help command [Jutebi]" });
 
       queue?.textChannel?.send({ embeds: [embed] }).catch((e) => {});
     }
