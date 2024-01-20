@@ -1,11 +1,11 @@
 require('dotenv').config()
 
 module.exports = {
-  TOKEN: process.env.TOKEN,
-  ownerID: [process.env.ownerID, ""],
+  TOKEN: process.env.TOKEN.toString(),
+  ownerID: [process.env.ownerID.toString(), ""],
   botInvite: "",
   supportServer: "",
-  mongodbURL: process.env.mongodbURL,
+  mongodbURL: process.env.mongodbURL.toString(),
   status: "Jutebi",
   commandsDir: "./commands",
   language: "en",
